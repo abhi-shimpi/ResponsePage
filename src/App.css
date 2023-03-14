@@ -1,0 +1,33 @@
+.formCard {
+  /* background-color: yellowgreen; */
+  background-color: #ffffff;
+  box-shadow: 1px 1px 3px 2px rgb(241, 241, 241);
+  padding: 1rem;
+  margin: 1rem;
+}
+.surveyInfo {
+  height: 4rem;
+  width: 20%;
+  align-items: center;
+}
+
+.surveyDetails {
+  padding: 0.2rem;
+  margin-bottom: .4rem;
+  border-bottom: 1px solid rgb(219, 218, 218);
+}
+
+.icons {
+  padding: 10px;
+  background-color: rgb(226, 223, 223);
+  border-radius: 50%;
+  margin: 5px;
+}
+
+.barAndPieChart{
+  flex-direction: row;
+  justify-content: space-around;
+  height: 27.5rem;
+  width: 100%;
+  background-color: #F7F7F7;
+}
