@@ -6,33 +6,12 @@ import { useState } from 'react';
 
 const QuestionsSideContainer = ({ setData }) => {
 
-    const [respData, setRespData] = useState({});
-
     const questions = [
-        {
-            "question": "What is your Name1?",
-            "data":[
-                { name: 'Jan', value: 100 },
-                { name: 'Feb', value: 200 },
-                { name: 'March', value: 300 },
-            ]
-        },
-        {
-            "question": "What is your Name2?",
-            "data": [
-                { name: 'Jan', value: 10 },
-                { name: 'Feb', value: 200 },
-                { name: 'March', value: 300 },
-            ]
-        },
-        {
-            "question": "What is your Name3?",
-            "data": [
-                { name: 'Jan', value: 50 },
-                { name: 'Feb', value: 30 },
-                { name: 'March', value: 300 },
-            ]
-        },
+       "what is your name 1?",
+        "what is your name 2?",
+        "what is your name 3?",
+        "what is your name 4?",
+        "what is your name 5?",
     ]
 
     const handleClick = (arg) => {
@@ -43,8 +22,8 @@ const QuestionsSideContainer = ({ setData }) => {
         <>
         {
             questions.map((question)=>(
-                <div key={question.question} className={classes.singalQuestion} onClick={()=>handleClick(question)}>
-                    <Typography style={{ fontSize: "13px" }} variant="caption" color="initial">{question.question} </Typography>
+                <div key={question} className={classes.singalQuestion} onClick={()=>handleClick(question)}>
+                    <Typography style={{ fontSize: "13px" }} variant="caption" color="initial">{question} </Typography>
                 </div>
             ))
         }
